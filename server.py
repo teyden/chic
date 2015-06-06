@@ -1,12 +1,9 @@
 
 from flask import Flask, session, request, make_response, jsonify, send_file
 from flask import render_template, url_for, redirect, send_from_directory
-import requests
 import os
 import json
 
-
-from flask import Flask, send_from_directory, request, render_template, json
 
 app = Flask(__name__, static_url_path='')
 
@@ -39,40 +36,40 @@ def allParametersExist(post, default):
 
 ########### VIEW ###########
 
-@app.route('/static/js/<path:path>')
+@app.route('/js/<path:path>')
 def send_js(path):
-	return send_from_directory('static/js', path)
+	return send_from_directory('js', path)
 
 
-@app.route('/static/css/<path:path>')
+@app.route('/css/<path:path>')
 def send_css(path):
-	return send_from_directory('static/css', path)
+	return send_from_directory('css', path)
 
 
-@app.route('/static/ext/<path:path>')
-def send_ui(path):
-	return send_from_directory('static/ext', path)
+@app.route('/images/<path:path>')
+def send_images(path):
+	return send_from_directory('images', path)
 
 
-@app.route('/static/img/<path:path>')
-def send_img(path):
-	return send_from_directory('static/img', path)
+@app.route('/fonts/<path:path>')
+def send_fonts(path):
+	return send_from_directory('fonts', path)
 
 #### 
 
 @app.route('/')
 @app.route('/home')
 def index():
-	return send_from_directory('static', 'index.html')
+	return send_from_directory('', 'index.html')
 
-@app.route('/aboutus')
-def load_aboutus():
-	## LOAD PARTIAL 
-	return send_from_directory('static/html', 'aboutus.html')
+# @app.route('/aboutus')
+# def load_aboutus():
+# 	## LOAD PARTIAL 
+# 	return send_from_directory('static/html', 'aboutus.html')
 
-@app.route('/services')
-def load_services():
-	return send_from_directory('static/html', 'services.html')
+# @app.route('/services')
+# def load_services():
+# 	return send_from_directory('static/html', 'services.html')
 
 
 ### API

@@ -1,12 +1,9 @@
 
 from flask import Flask, session, request, make_response, jsonify, send_file
 from flask import render_template, url_for, redirect, send_from_directory
-import requests
 import os
 import json
 
-
-from flask import Flask, send_from_directory, request, render_template, json
 
 app = Flask(__name__, static_url_path='')
 
