@@ -296,7 +296,7 @@ strong { font-weight: 700; }
     padding: 0;
     width: 100%;
     position: relative;
-    background-color: #E6E1F7;
+    background-color: #B8ADD2;
 
     -webkit-border-bottom: 1px solid #efefef;
        -moz-border-bottom: 1px solid #efefef;
@@ -310,7 +310,7 @@ strong { font-weight: 700; }
 #info { padding: 6px 0; }
 #info span { margin: 0 10px 0 0; }
 #info span:last-child { margin: 0; }
-#info a { color: #888888; }
+#info a { color: #ffffff; }
 #info a:hover { color: #6F69B8; }
 
 /* 3.2.3 Social Icons
@@ -805,7 +805,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     overflow: hidden;
     position: relative;
     padding: 80px 0 20px;
-    background-color: #222222;
+    background-color: #B8ADD2;
 }
 
 
@@ -847,7 +847,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 /* 8.2.3 Number
 ---------------------------------------------------------------------------*/
 .feature-box-number {
-    color: #ce0c21;
+    color: #333333;
     font-size: 50px;
     line-height: 50px;
     text-align: center;
@@ -926,7 +926,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 	        transition: all 0.3s ease-in-out;
 }
 .portfolioFilter ul li:last-child { margin: 0 0 10px; }
-.portfolioFilter ul li:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #ce0c21; }
+.portfolioFilter ul li:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #E6E1F7; }
 
 /* 9.2.3 Anchor
 ---------------------------------------------------------------------------*/
@@ -957,7 +957,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
           -ms-user-select: none;
            -o-user-select: none;
 }
-.selected { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #ce0c21; }
+.selected { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #E6E1F7; }
 
 /* 9.3 isotope
 ---------------------------------------------------------------------------*/
@@ -1323,7 +1323,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ---------------------------------------------------------------------------*/
 .monials-block-left .client-name,
 .monials-block-right .client-name {
-    color: #ce0c21;
+    color: #8E7BB7;
     font-size: 18px;
     font-weight: 600;
     margin: 0 0 15px 0;
@@ -1341,7 +1341,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ---------------------------------------------------------------------------*/
 .monials-block-left:hover .client-img,
 .monials-block-right:hover .client-img {
-    background-color: #ce0c21;
+    background-color: #725aa5;
 }
 
 
@@ -1493,7 +1493,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 /* 13.2.6 Hover
 ---------------------------------------------------------------------------*/
-.member-box:hover { background-color: #ce0c21; }
+.member-box:hover { background-color: #725aa5; }
 .member-box a:hover {
     color: #ffffff;
     background-color: #333333;
@@ -1514,7 +1514,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     position: relative;
     text-align: center;
     padding: 80px 0 50px;
-    background-color: #ce0c21;
+    background-color: #725aa5;
 }
 
 /* 14.2 Skill Chart
@@ -1706,10 +1706,10 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
          -o-box-shadow: none;
             box-shadow: none;
 
-    -webkit-border: 2px solid #ce0c21;
-       -moz-border: 2px solid #ce0c21;
-         -o-border: 2px solid #ce0c21;
-            border: 2px solid #ce0c21;
+    -webkit-border: 2px solid #8E7BB7;
+       -moz-border: 2px solid #8E7BB7;
+         -o-border: 2px solid #8E7BB7;
+            border: 2px solid #8E7BB7;
 }
 
 /* 15.2.4 Button
@@ -1720,13 +1720,13 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     color: #ffffff;
     font-size: 14px;
     line-height: 22px;
-    background: url("../images/mask/maskoblong.png") no-repeat scroll 50% 50% / 100% 100% #ce0c21;
+    background: url("../images/mask/maskoblong.png") no-repeat scroll 50% 50% / 100% 100% #B8ADD2;
 }
 .contactForm .submit.focus,
 .contactForm .submit:hover {
 	color: #ffffff;
     position: relative;
-    background: url("../images/mask/maskoblong.png") no-repeat scroll 50% 50% / 100% 100% #333333;
+    background: url("../images/mask/maskoblong.png") no-repeat scroll 50% 50% / 100% 100% #B8ADD2;
 }
 
 /* 15.2.5 error message
@@ -1735,7 +1735,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 	top: 0;
     z-index: 2;
     float: right;
-    color: #ce0c21;
+    color: #B8ADD2;
     position: relative;
     margin: -69px 15px 0 0;
 }
@@ -1828,7 +1828,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     font-size: 14px;
     line-height: 22px;
     padding: 9px 16px;
-    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #ce0c21;
+    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #B8ADD2;
 
     -webkit-border: none;
        -moz-border: none;
@@ -1852,7 +1852,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 .serror {
     top: 24px;
     right: 130px;
-    color: #ce0c21;
+    color: #B8ADD2;
     position: absolute;
 }
 
@@ -1956,11 +1956,11 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     padding: 10px 0;
     font-size: 15px;
 }
-.navbar-nav > li > a:hover { color: #ce0c21; }
+.navbar-nav > li > a:hover { color: #8E7BB7; }
 .navbar-nav > li { margin-left: 20px; }
 .navbar-nav > li:first-child { margin-left: 0; }
 .nav > li > a:hover, .nav > li > a:focus { background-color: transparent; }
-.navbar-nav > li.active > a { color: #ce0c21; }
+.navbar-nav > li.active > a { color: #8E7BB7; }
 .navbar-toggle {
     margin: 0;
     color: #888888;
@@ -2023,13 +2023,13 @@ fieldset[disabled] .btn {
 .btn-Nesto:active,
 .btn-Nesto.active {
     color: #ffffff;
-    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #ce0c21;
+    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #8E7BB7;
 }
 
 .btn-Nesto-o {
     color: #ffffff;
     letter-spacing: 1px;
-    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #ce0c21;
+    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #8E7BB7;
 }
 .btn-Nesto-o:hover,
 .btn-Nesto-o:focus,
@@ -2044,7 +2044,7 @@ fieldset[disabled] .btn {
 ========================================================================== */
 .alert-nesto {
     color: #ffffff;
-    background-color: #ce0c21;
+    background-color: #8E7BB7;
 
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
@@ -2158,7 +2158,7 @@ fieldset[disabled] .btn {
     .navbar-nav > li:hover,
     .navbar-nav > li.active,
     .navbar-nav > li.active a {
-        color: #ce0c21;
+        color: #8E7BB7;
         background-color: #ffffff;
     }
     .navbar-nav > li {
