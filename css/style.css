@@ -1500,10 +1500,13 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 #client-slider-section {
     margin: 0;
     width: 100%;
-    padding: 80px 0;
+    padding: 60px 0;
     overflow: hidden;
     position: relative;
-    background-color: #333333;
+/*    background-color: #a2c2b0;
+*/    
+    background-image: url(../images/nails/nail-banner1.jpeg);
+    background-repeat: none;
 }
 
 /* 12.2 OWL Clients

@@ -60,7 +60,12 @@ def send_fonts(path):
 @app.route('/')
 @app.route('/home')
 def index():
-	return send_from_directory('', 'index.html')
+	base_str = "index_V" # "x.html"
+	for x in range(9):
+		if not os.path.exists(base_str + "%d.html" % (x+1)):
+			version = x
+			break
+	return send_from_directory('', 'index_V%d.html' % version)
 
 # @app.route('/aboutus')
 # def load_aboutus():
