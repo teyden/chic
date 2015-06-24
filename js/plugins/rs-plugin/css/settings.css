@@ -12,7 +12,6 @@ website:   	http://www.themepunch.com
 -----------------------------------------------------------------------------*/
 
 
-
 /*************************
 	-	CAPTIONS	-
 **************************/
@@ -902,7 +901,7 @@ border-style:none;
 
 
 /**********************************************
-	-	FULLSCREEN AND FULLWIDHT CONTAINERS	-
+	-	FULLSCREEN AND FULLWIDTH CONTAINERS	-
 **********************************************/
 
 .fullscreen-container {
@@ -1257,6 +1256,7 @@ padding: 0px;
 ***********************************************/
 
  .tp-simpleresponsive img {
+ 		opacity: 0.6;
 		-moz-user-select: none;
         -khtml-user-select: none;
         -webkit-user-select: none;

@@ -9,6 +9,99 @@
 @import url(../js/plugins/owl/owl.theme.css);
 @import url(../js/plugins/owl/owl.transitions.css);
 
+
+/*****************************************************************
+******************************************************************/
+
+.panel-transparent {
+    /*background-color: #e3deed;*/
+    background: none;
+    transition: padding 0.5s;
+    -moz-transition: padding 0.5s; /* Firefox 4 */
+    -webkit-transition: padding 0.5s; /* Safari and Chrome */
+    -o-transition: padding 0.5s; /* Opera */
+    -ms-transition:padding 0.5s; /* IE9 (maybe) */  
+  
+}
+
+.panel:hover {
+    padding:2px;
+
+}
+
+.panel {  /* Prices Table Panel */
+    background-color: none;  /* Coloring this doesn't fill in the Panel header */
+}
+
+.panel-body {  /* Prices Table Panel */
+    background-color: #d6e0e4;
+    /*font-family: 'Noto Serif', serif;*/
+}
+
+.table .thead {
+    background-color: #d6e0e4;
+}
+#prices-section {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 80px 0 50px;
+    background-color: #ece7e3;
+}
+#prices-section .col-md-4 { padding: none;}
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+/*@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -33%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 33%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 33%;
+    margin-left: 10px;
+  }
+}*/
+
+
+/* Sidebar navigation */
+/*.nav-sidebar {
+  background-color: #f5f5f5;
+  margin-right: -15px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #428bca;
+}*/
+
+/*****************************************************************
+*****************************************************************/
+
+
 /*
 Template Name: Safandi
 Description: HTML5 / CSS3 One Page
@@ -186,7 +279,7 @@ body {
 /* 1.2 Anchor
 ---------------------------------------------------------------------------*/
 a {
-    color: #8E7BB7;
+    color: #d4c7bd;
 
     -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
@@ -271,7 +364,7 @@ strong { font-weight: 700; }
 ---------------------------------------------------------------------------*/
 .base-color { color: #E6E1F7; }
 .black-color { color: #333333; }
-.gray-color { color: #444444; }
+.gray-color { color: #312F34; }
 
 
 
@@ -296,7 +389,9 @@ strong { font-weight: 700; }
     padding: 0;
     width: 100%;
     position: relative;
-    background-color: #B8ADD2;
+    /*background-color: #a393b8;*/  
+    background-color: #b0a2c2;  /* Dark Purple 
+    background-color: #B4C2A2;  /* Green */
 
     -webkit-border-bottom: 1px solid #efefef;
        -moz-border-bottom: 1px solid #efefef;
@@ -308,10 +403,21 @@ strong { font-weight: 700; }
 /* 3.2.2 Info
 ---------------------------------------------------------------------------*/
 #info { padding: 6px 0; }
-#info span { margin: 0 10px 0 0; }
+/*
+#info span { 
+    margin: 0 10px 0 0;
+    background-color:#CAC1D6;
+    color:#312f34;
+    border:3px solid #CAC1D6; }    Contrast color from current */    
+#info span { 
+    margin: 0 10px 0 0;
+    background-color:#b0a2c2;
+    color: #E6E1F7;
+    border:3px solid #b0a2c2; }
 #info span:last-child { margin: 0; }
 #info a { color: #ffffff; }
 #info a:hover { color: #6F69B8; }
+
 
 /* 3.2.3 Social Icons
 ---------------------------------------------------------------------------*/
@@ -369,7 +475,8 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     width: 100%;
     padding: 20px 0;
     position: relative;
-    background-color: #ffffff;
+    background-color: #d7d0e0;
+    /*background-color: #ffffff;*/
 
     -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
@@ -402,7 +509,10 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     position: fixed;
     background-color: rgba(255, 255, 255, 0.95);
 }
-#nav-wrapper.tiny.tinyheader { padding: 10px 0; }
+#nav-wrapper.tiny.tinyheader { 
+    padding: 10px 0; 
+    background-color: #b0a2c2;
+}
 
 
 
@@ -412,11 +522,49 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ========================================================================== */
 /* 4.1 Wrapper
 ---------------------------------------------------------------------------*/
+/*.boxedcontainer     {   max-width: 1170px; margin:auto; padding:0px 30px;}
+*/
+
 .forcefullwidth_wrapper_tp_banner {
     z-index: 0;
     position: relative;
     background-color: #ffffff;
 }
+
+
+.tp-banner img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+
+/*********************************************
+    -   SETTINGS FOR BANNER CONTAINERS  -
+**********************************************/
+/*
+.tp-banner-container{
+    width:100%;
+    position:relative;
+    padding:0;
+
+}
+
+.tp-banner{
+    width:100%;
+    position:relative;
+}
+
+.tp-banner-fullscreen-container {
+        width:100%;
+        position:relative;
+        padding:0;
+}*/
+
 
 /* 4.2 Arrows
 ---------------------------------------------------------------------------*/
@@ -456,7 +604,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     text-decoration: inherit;
     font-family: 'FontAwesome';
 }
-.tparrows:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #8E7BB7 !important; }
+.tparrows:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #d4c7bd !important; }
 .tp-leftarrow:before { content: "\f104"; }
 .tp-rightarrow:before { content: "\f105"; }
 
@@ -476,7 +624,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
          -o-border-radius: 5px;
             border-radius: 5px;
 }
-.tp-caption.medium_bg_asbestos:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #8E7BB7; }
+.tp-caption.medium_bg_asbestos:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #d4c7bd; }
 
 /* 4.4 btn
 ---------------------------------------------------------------------------*/
@@ -579,10 +727,10 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
          -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 
-    -webkit-border-bottom: 2px solid #8E7BB7;
-       -moz-border-bottom: 2px solid #8E7BB7;
-         -o-border-bottom: 2px solid #8E7BB7;
-            border-bottom: 2px solid #8E7BB7;
+    -webkit-border-bottom: 2px solid #d4c7bd;
+       -moz-border-bottom: 2px solid #d4c7bd;
+         -o-border-bottom: 2px solid #d4c7bd;
+            border-bottom: 2px solid #d4c7bd;
 
     -webkit-border-radius: 5px 5px 0 0;
        -moz-border-radius: 5px 5px 0 0;
@@ -701,7 +849,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 /* 6.2 Main
 ---------------------------------------------------------------------------*/
 .main-title {
-    color: #6F69B8;
+    color: #c0a1bd;
     font-size: 34px;
     line-height: 1.4;
     font-weight: 700;
@@ -782,7 +930,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     text-align: center;
 }
 .feature-box-style2 .feature-box-containt h4 {
-    color: #725aa5;
+    color: #c2b0a2;
     margin: 0 0 10px;
 /*    text-transform: uppercase;*/
 }
@@ -870,7 +1018,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 /* 8.2.5 Hover
 ---------------------------------------------------------------------------*/
-.feature-box-style3:hover .feature-box-icon i { background: url("../images/mask/masksquare.png") no-repeat scroll 50% 50% / 100% 100% #E6E1F7; }
+.feature-box-style3:hover .feature-box-icon i { background: url("../images/mask/masksquare.png") no-repeat scroll 50% 50% / 100% 100% #c2b0a2; }
 
 
 
@@ -926,7 +1074,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 	        transition: all 0.3s ease-in-out;
 }
 .portfolioFilter ul li:last-child { margin: 0 0 10px; }
-.portfolioFilter ul li:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #E6E1F7; }
+.portfolioFilter ul li:hover { background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #c2b0a2; }
 
 /* 9.2.3 Anchor
 ---------------------------------------------------------------------------*/
@@ -1084,9 +1232,6 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ---------------------------------------------------------------------------*/
 .portfolio-grid .portfolio-item:hover .img-figure-overlayer { opacity: 1; }
 
-
-
-
 /* ==========================================================================
 /* 10. Pricing Section
 ========================================================================== */
@@ -1098,7 +1243,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     overflow: hidden;
     position: relative;
     padding: 80px 0 50px;
-    background-color: #e6e1f7;
+    background-color: #ffffff;
 }
 #pricing-section .col-md-3 { padding: 0; }
 
@@ -1147,11 +1292,11 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 }
 .feature-pricing-box .price {
-    background-image: -webkit-linear-gradient(270deg, #aa9cc9, #725aa5);
-    background-image: -moz-linear-gradient(270deg, #aa9cc9, #725aa5);
-    background-image: -ms-linear-gradient(270deg, #aa9cc9, #725aa5);
-    background-image: -o-linear-gradient(270deg, #aa9cc9, #725aa5);
-    background-image: linear-gradient(180deg, #aa9cc9, #725aa5);
+    background-image: -webkit-linear-gradient(270deg, #aa9cc9, #d4c7bd);
+    background-image: -moz-linear-gradient(270deg, #aa9cc9, #d4c7bd);
+    background-image: -ms-linear-gradient(270deg, #aa9cc9, #d4c7bd);
+    background-image: -o-linear-gradient(270deg, #aa9cc9, #d4c7bd);
+    background-image: linear-gradient(180deg, #aa9cc9, #d4c7bd);
 }
 
 /* 10.2.3 Details
@@ -1323,7 +1468,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ---------------------------------------------------------------------------*/
 .monials-block-left .client-name,
 .monials-block-right .client-name {
-    color: #8E7BB7;
+    color: #d4c7bd;
     font-size: 18px;
     font-weight: 600;
     margin: 0 0 15px 0;
@@ -1341,7 +1486,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ---------------------------------------------------------------------------*/
 .monials-block-left:hover .client-img,
 .monials-block-right:hover .client-img {
-    background-color: #725aa5;
+    background-color: #B8ADD2;
 }
 
 
@@ -1358,7 +1503,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     padding: 80px 0;
     overflow: hidden;
     position: relative;
-    background-color: #222222;
+    background-color: #333333;
 }
 
 /* 12.2 OWL Clients
@@ -1370,7 +1515,9 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 /* 12.2.2 Image
 ---------------------------------------------------------------------------*/
 .client-logo { text-align: center; }
-.client-logo img { opacity: 0.7; }
+.client-logo img { 
+    background-color: #a2c2b0;
+    opacity: 0.7; }
 .client-logo:hover img { opacity: 1; }
 
 
@@ -1493,7 +1640,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 /* 13.2.6 Hover
 ---------------------------------------------------------------------------*/
-.member-box:hover { background-color: #725aa5; }
+.member-box:hover { background-color: #d4c7bd; }
 .member-box a:hover {
     color: #ffffff;
     background-color: #333333;
@@ -1503,7 +1650,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 
 /* ==========================================================================
-   14. Skills Section
+   14. Skills Section - Bottom banner (HTML, Wordpress, JS, CSS3, Photoshop)
 ========================================================================== */
 /* 14.1 Wrapper
 ---------------------------------------------------------------------------*/
@@ -1514,7 +1661,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     position: relative;
     text-align: center;
     padding: 80px 0 50px;
-    background-color: #725aa5;
+    background-color: #B8ADD2;
 }
 
 /* 14.2 Skill Chart
@@ -1706,10 +1853,10 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
          -o-box-shadow: none;
             box-shadow: none;
 
-    -webkit-border: 2px solid #8E7BB7;
-       -moz-border: 2px solid #8E7BB7;
-         -o-border: 2px solid #8E7BB7;
-            border: 2px solid #8E7BB7;
+    -webkit-border: 2px solid #d4c7bd;
+       -moz-border: 2px solid #d4c7bd;
+         -o-border: 2px solid #d4c7bd;
+            border: 2px solid #d4c7bd;
 }
 
 /* 15.2.4 Button
@@ -1848,7 +1995,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 /* 17.4 Success & Error
 ---------------------------------------------------------------------------*/
-.ssuccess,
+.success,
 .serror {
     top: 24px;
     right: 130px;
@@ -1952,15 +2099,15 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     height: 40px;
 }
 .navbar-nav > li > a {
-    color: #888888;
+    color: #3a3430;
     padding: 10px 0;
     font-size: 15px;
 }
-.navbar-nav > li > a:hover { color: #8E7BB7; }
+.navbar-nav > li > a:hover { color: #888888; /* color: #3a3430; */ } 
 .navbar-nav > li { margin-left: 20px; }
 .navbar-nav > li:first-child { margin-left: 0; }
-.nav > li > a:hover, .nav > li > a:focus { background-color: transparent; }
-.navbar-nav > li.active > a { color: #8E7BB7; }
+.nav > li > a:hover, .nav > li > a:focus { background-color: transparent; border-bottom: 3px solid #a8b893; }
+.navbar-nav > li.active > a { color: #3a3430; }
 .navbar-toggle {
     margin: 0;
     color: #888888;
@@ -2023,13 +2170,13 @@ fieldset[disabled] .btn {
 .btn-Nesto:active,
 .btn-Nesto.active {
     color: #ffffff;
-    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #8E7BB7;
+    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #d4c7bd;
 }
 
 .btn-Nesto-o {
     color: #ffffff;
     letter-spacing: 1px;
-    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #8E7BB7;
+    background: url("../images/mask/maskbutton.png") no-repeat scroll 50% 50% / 100% 100% #d4c7bd;
 }
 .btn-Nesto-o:hover,
 .btn-Nesto-o:focus,
@@ -2158,7 +2305,7 @@ fieldset[disabled] .btn {
     .navbar-nav > li:hover,
     .navbar-nav > li.active,
     .navbar-nav > li.active a {
-        color: #8E7BB7;
+        color: #888888;
         background-color: #ffffff;
     }
     .navbar-nav > li {
