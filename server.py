@@ -55,6 +55,11 @@ def send_images(path):
 def send_fonts(path):
 	return send_from_directory('fonts', path)
 
+@app.route('/socialmedia/<path:path>')
+def open_facebook(path):
+	return send_from_directory('socialmedia', path)
+
+	
 #### 
 
 @app.route('/')
