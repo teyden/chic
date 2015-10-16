@@ -60,7 +60,7 @@ def open_facebook(path):
 	return send_from_directory('socialmedia', path)
 
 	
-#### 
+################# APPLICATION ################### 
 
 @app.route('/')
 @app.route('/home')
@@ -123,4 +123,5 @@ def request_appointment():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)	
+	app.run(debug=True)
+	app.run(host='0.0.0.0', port=8080)	
