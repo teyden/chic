@@ -29,11 +29,11 @@
 
 }
 
-.panel {  /* Prices Table Panel */
+.panel {  /* pricing Table Panel */
     background-color: none;  /* Coloring this doesn't fill in the Panel header */
 }
 
-.panel-body {  /* Prices Table Panel */
+.panel-body {  /* pricing Table Panel */
     background-color: #d6e0e4;
     /*font-family: 'Noto Serif', serif;*/
 }
@@ -41,7 +41,7 @@
 .table .thead {
     background-color: #d6e0e4;
 }
-#prices-section {
+#pricing-section {
     margin: 0;
     width: 100%;
     overflow: hidden;
@@ -49,7 +49,7 @@
     padding: 80px 0 50px;
     background-color: #ece7e3;
 }
-#prices-section .col-md-4 { padding: none;}
+#pricing-section .col-md-4 { padding: none;}
 
 
 /*
@@ -176,9 +176,9 @@ Author: M. Abo Elwafa
         9.4.4 Overlayer
         9.4.5 Anchor
         9.4.6 Hover
-10. Pricing Section
+10. Promotions Section
     10.1 Wrapper
-    10.2 Pricing Box
+    10.2 promotions Box
         10.2.1 Wrapper
         10.2.2 Price
         10.2.3 Details
@@ -526,6 +526,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 */
 
 .forcefullwidth_wrapper_tp_banner {
+
     z-index: 0;
     position: relative;
     background-color: #ffffff;
@@ -539,7 +540,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     width: 100%;
     height: auto;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 
@@ -649,7 +650,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center center;
-    background-image: url(../images/background/1.jpg);
+    background-color: #D3DBC9;
 
     -webkit-background-size: cover;
        -moz-background-size: cover;
@@ -1233,11 +1234,11 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 .portfolio-grid .portfolio-item:hover .img-figure-overlayer { opacity: 1; }
 
 /* ==========================================================================
-/* 10. Pricing Section
+/* 10. promotions Section
 ========================================================================== */
 /* 10.1 Wrapper
 ---------------------------------------------------------------------------*/
-#pricing-section {
+#promotions-section {
     margin: 0;
     width: 100%;
     overflow: hidden;
@@ -1245,14 +1246,14 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     padding: 80px 0 50px;
     background-color: #ffffff;
 }
-#pricing-section .col-md-3 { padding: 0; }
+#promotions-section .col-md-3 { padding: 0; }
 
-/* 10.2 Pricing Box
+/* 10.2 promotions Box
 ---------------------------------------------------------------------------*/
 /* 10.2.1 Wrapper
 ---------------------------------------------------------------------------*/
-.pricing-box,
-.feature-pricing-box {
+.promotions-box,
+.feature-promotions-box {
     padding: 0;
     width: 100%;
     overflow: hidden;
@@ -1266,7 +1267,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
          -o-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
             box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
 }
-.feature-pricing-box {
+.feature-promotions-box {
     z-index: 2;
 
     -webkit-transform: scale(1.05);
@@ -1283,7 +1284,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 /* 10.2.2 Price
 ---------------------------------------------------------------------------*/
-.pricing-box .price {
+.promotions-box .price {
     background-image: -webkit-linear-gradient(270deg, #444444, #333333);
     background-image: -moz-linear-gradient(270deg, #444444, #333333);
     background-image: -ms-linear-gradient(270deg, #444444, #333333);
@@ -1291,7 +1292,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     background-image: linear-gradient(180deg, #444444, #333333);
 
 }
-.feature-pricing-box .price {
+.feature-promotions-box .price {
     background-image: -webkit-linear-gradient(270deg, #aa9cc9, #d4c7bd);
     background-image: -moz-linear-gradient(270deg, #aa9cc9, #d4c7bd);
     background-image: -ms-linear-gradient(270deg, #aa9cc9, #d4c7bd);
@@ -1301,14 +1302,14 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 /* 10.2.3 Details
 ---------------------------------------------------------------------------*/
-.pricing-box ul,
-.feature-pricing-box ul {
+.promotions-box ul,
+.feature-promotions-box ul {
 	padding: 0 20px;
     list-style: none;
     margin: 0 0 40px 0;
 }
-.pricing-box li,
-.feature-pricing-box li {
+.promotions-box li,
+.feature-promotions-box li {
 	padding: 10px 0;
     cursor: default;
 
@@ -1326,10 +1327,10 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 /* 10.2.4 Typography
 ---------------------------------------------------------------------------*/
-.pricing-box .price h3,
-.pricing-box .price h1,
-.feature-pricing-box .price h3,
-.feature-pricing-box .price h1 {
+.promotions-box .price h3,
+.promotions-box .price h1,
+.feature-promotions-box .price h3,
+.feature-promotions-box .price h1 {
     margin: 0;
     color: #ffffff;
     padding: 10px 0;
@@ -1338,30 +1339,30 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 
 }
 
-.pricing-box .price h3 { background-color: #333333; }
-.feature-pricing-box .price h3 { background-color: #860815; }
+.promotions-box .price h3 { background-color: #333333; }
+.feature-promotions-box .price h3 { background-color: #860815; }
 
-.pricing-box .price h1,
-.feature-pricing-box .price h1 {
+.promotions-box .price h1,
+.feature-promotions-box .price h1 {
     font-size: 50px;
     padding: 30px 0;
     margin: 0 0 30px;
 }
-.pricing-box .price h1 span,
-.feature-pricing-box .price h1 span {
+.promotions-box .price h1 span,
+.feature-promotions-box .price h1 span {
     font-size: 30px;
     text-transform: uppercase;
 }
 
 /* 10.2.5 Hover
 ---------------------------------------------------------------------------*/
-.pricing-box li:hover,
-.feature-pricing-box li:hover { color: #333333; }
+.promotions-box li:hover,
+.feature-promotions-box li:hover { color: #333333; }
 
 /* 10.2.6 Button
 ---------------------------------------------------------------------------*/
-.pricing-box .btn,
-.feature-pricing-box .btn {
+.promotions-box .btn,
+.feature-promotions-box .btn {
 	-webkit-border-radius: 4px 4px 0 0;
        -moz-border-radius: 4px 4px 0 0;
          -o-border-radius: 4px 4px 0 0;
@@ -1497,7 +1498,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ========================================================================== */
 /* 12.1 Wrapper
 ---------------------------------------------------------------------------*/
-#client-slider-section {
+/*#client-slider-section {
     margin: 0;
     width: 100%;
     padding: 60px 0;
@@ -1505,8 +1506,34 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     position: relative;
 /*    background-color: #a2c2b0;
 */    
-    background-image: url(../images/nails/nail-banner1.jpeg);
-    background-repeat: none;
+/*    background-image: url(../images/nails/nail-banner1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+        background-repeat-x: no-repeat;
+        background-repeat-y: repeat;
+}*/
+#nail-banner-section { /* adopted from #intro-section */
+    margin: 0;
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('../images/nails/nail-colors.png');
+    background-repeat: no-repeat;
+        background-repeat-x: no-repeat;
+        background-repeat-y: repeat;
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+    -webkit-border-bottom: 1px solid #efefef;
+       -moz-border-bottom: 1px solid #efefef;
+         -o-border-bottom: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
 }
 
 /* 12.2 OWL Clients
@@ -2325,7 +2352,7 @@ fieldset[disabled] .btn {
 
     .main-title { font-size: 30px; }
 
-    .feature-pricing-box {
+    .feature-promotions-box {
         -webkit-transform: scale(1.0);
            -moz-transform: scale(1.0);
             -ms-transform: scale(1.0);

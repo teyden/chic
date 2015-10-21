@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Safandi</title>
+<title>Chic Nail Bar</title>
 
 </head>
 
@@ -11,7 +11,7 @@
 
 
 <?php
-    $email_to = "eng_abo_elwafa@yahoo.com";
+    $email_to = "teydenn@gmail.com";
     $email = $_POST["email"];
     $name = $_POST["name"];
     $subject = $_POST["subject"];

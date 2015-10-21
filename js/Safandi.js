@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
     ScrollTo
     ========================================================================== */
     $('a.scrollto').click(function (event) {
-        $('html, body').scrollTo(this.hash, this.hash, {gap: {y: -60}, animation:  {easing: 'easeInOutCubic', duration: 1700}});
+        $('html, body').scrollTo(this.hash, this.hash, {gap: {y: -60}, animation:  {easing: 'easeInOutCubic', duration: 800}});
         event.preventDefault();
 
         if ($('.navbar-collapse').hasClass('in')) {
@@ -246,12 +246,12 @@ jQuery(document).ready(function () {
     map = new GMaps({
         el: '#map',
         scrollwheel: false,
-        lat: 29.983775,
-        lng: 31.167161
+        lat: 43.5155584,
+        lng: -79.6276811
     });
     map.addMarker({
-        lat: 29.983775,
-        lng: 31.167161,
+        lat: 43.5155584,
+        lng: -79.6276811,
         icon: "images/marker.png"
     });
 
