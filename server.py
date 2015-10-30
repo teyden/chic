@@ -40,16 +40,13 @@ def allParametersExist(post, default):
 def send_js(path):
 	return send_from_directory('js', path)
 
-
 @app.route('/css/<path:path>')
 def send_css(path):
 	return send_from_directory('css', path)
 
-
 @app.route('/images/<path:path>')
 def send_images(path):
 	return send_from_directory('images', path)
-
 
 @app.route('/fonts/<path:path>')
 def send_fonts(path):
@@ -65,12 +62,15 @@ def open_facebook(path):
 @app.route('/')
 @app.route('/home')
 def index():
-	base_str = "index_V" # "x.html"
+	base_str = "index_V"  # "x.html"
+	version = 0
 	for x in range(9):
 		if not os.path.exists(base_str + "%d.html" % (x+1)):
 			version = x
-			break
-	return send_from_directory('', 'index_V%d.html' % version)
+			return send_from_directory('', 'index_V%d.html' % version)
+	if not version:
+		return send_from_directory('', 'index_V.html')
+
 
 # @app.route('/aboutus')
 # def load_aboutus():

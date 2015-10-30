@@ -1,2 +1,5 @@
 venv
 *.pyc
+access_log
+chic_nginx.conf.backup
+chic_uwsgi.ini
