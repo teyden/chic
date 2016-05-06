@@ -279,7 +279,7 @@ body {
 /* 1.2 Anchor
 ---------------------------------------------------------------------------*/
 a {
-    color: #d4c7bd;
+    color: #d4c7bd; /* Beige */
 
     -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
@@ -347,7 +347,7 @@ strong { font-weight: 700; }
 ::selection {
     color: #ffffff;
     text-shadow: none;
-    background-color: #E6E1F7;
+    background-color: #E6E1F7;  /* light purple */
 }
 ::-webkit-selection {
     color: #ffffff;
@@ -390,7 +390,7 @@ strong { font-weight: 700; }
     width: 100%;
     position: relative;
     /*background-color: #a393b8;*/  
-    background-color: #b0a2c2;  /* Dark Purple 
+    background-color: #b0a2c2;  /* light Purple 
     background-color: #B4C2A2;  /* Green */
 
     -webkit-border-bottom: 1px solid #efefef;
@@ -718,7 +718,8 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 /* 5.2.2.3 Image
 ---------------------------------------------------------------------------*/
 .feature-box-style1 .feature-box-image {
-    height: 0;
+    background-color: #E0E0E0;
+    height: 461px;
     width: 100%;
     display: block;
     overflow: hidden;
