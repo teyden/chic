@@ -413,10 +413,12 @@ strong { font-weight: 700; }
     margin: 0 10px 0 0;
     background-color:#b0a2c2;
     color: #E6E1F7;
-    border:3px solid #b0a2c2; }
+    border:3px solid #b0a2c2;
+    transition: all 1s ease 0.6s;
+    transition: background-color 0.4s, color 0.4s; }
 #info span:last-child { margin: 0; }
 #info a { color: #ffffff; }
-#info a:hover { color: #6F69B8; }
+#info a:hover { color: #616161; }
 
 
 /* 3.2.3 Social Icons
