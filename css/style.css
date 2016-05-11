@@ -429,16 +429,26 @@ strong { font-weight: 700; }
     color: #E6E1F7;
     border: 3px solid #b0a2c2;
     transition: all 1s ease 0.6s;
-    transition: background-color 0.4s, color 0.4s; }
-/*#info span:last-child { margin: 0; }
-*/
-#info span:hover {
-    top: -50px;
+    transition: background-color 0.4s, color 0.4s; 
 }
+
+#info span.re2 { /* End of page address info */
+    top: 0px;
+    margin: 0 10px 0 0;
+    background-color: #ffffff;
+    color: #424242;
+    border: 3px solid #ffffff;
+    transition: all 1s ease 0.6s;
+    transition: background-color 0.4s, color 0.4s; 
+}
+#info span.re2 > a {
+    color: #424242;
+}
+
 #info i {
     color: #000000;
     padding: 5px 5px;
-    background-color: #b0a2c2;
+    background-color: #E6E1F7;
     border-radius: 15px;
     border-top: 1px solid #b0a2c2;
     border-bottom: 1px solid #b0a2c2;
@@ -920,7 +930,12 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     text-align: center;
 }
 
-
+.desc-title a.phone {
+    color: #000000;
+}
+.desc-title a.phone:hover {
+    background-color: #d4c7bd;
+}
 
 
 /* ==========================================================================
