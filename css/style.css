@@ -9,6 +9,19 @@
 @import url(../js/plugins/owl/owl.theme.css);
 @import url(../js/plugins/owl/owl.transitions.css);
 
+/*
+ *
+ *
+ COLOURS:
+
+ TOP ADDRESS BAR: 
+ b0a2c2 (darker purple)
+ efefef (off-white)
+ 616161 (medium gray font)
+ b71c1c (map icon red)
+ *
+ *
+ */
 
 /*****************************************************************
 ******************************************************************/
@@ -410,16 +423,50 @@ strong { font-weight: 700; }
     color:#312f34;
     border:3px solid #CAC1D6; }    Contrast color from current */    
 #info span { 
+    top: 0px;
     margin: 0 10px 0 0;
-    background-color:#b0a2c2;
+    background-color: #b0a2c2;
     color: #E6E1F7;
-    border:3px solid #b0a2c2;
+    border: 3px solid #b0a2c2;
     transition: all 1s ease 0.6s;
     transition: background-color 0.4s, color 0.4s; }
-#info span:last-child { margin: 0; }
-#info a { color: #ffffff; }
-#info a:hover { color: #616161; }
+/*#info span:last-child { margin: 0; }
+*/
+#info span:hover {
+    top: -50px;
+}
+#info i {
+    color: #000000;
+    padding: 5px 5px;
+    background-color: #b0a2c2;
+    border-radius: 15px;
+    border-top: 1px solid #b0a2c2;
+    border-bottom: 1px solid #b0a2c2;
+    border-left: 1px solid #616161;
+    border-right: 1px solid #616161;
+    transition: all 0.6s ease-out;  
+}
 
+/*
+#info i:hover { 
+    color: #616161;
+    border-top: 1px solid #b0a2c2;
+    border-bottom: 1px solid #b0a2c2;
+    border-left: 1px solid #616161;
+    border-right: 1px solid #616161;
+}*/
+
+#info a { 
+    color: #ffffff;
+}
+#info a:hover > i { 
+    color: #EA4335;
+    background-color: #EFEFEF;
+    border: 1px solid #EFEFEF;
+/*    border-bottom: 1px solid #616161;
+    border-left: 1px solid #616161;
+    border-right: 1px solid #616161;*/
+}
 
 /* 3.2.3 Social Icons
 ---------------------------------------------------------------------------*/
