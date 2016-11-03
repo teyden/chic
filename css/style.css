@@ -408,8 +408,8 @@ strong { font-weight: 700; }
     padding: 0;
     width: 100%;
     position: relative;
-    /*background-color: #a393b8;*/  
-    background-color: #b0a2c2;  /* light Purple 
+    /*background-color: #a393b8;*/
+    background-color: #b0a2c2;  /* light Purple
     background-color: #B4C2A2;  /* Green */
 
     -webkit-border-bottom: 1px solid #efefef;
@@ -418,6 +418,22 @@ strong { font-weight: 700; }
             border-bottom: 1px solid #efefef;
 }
 .hide-top-header { display: none; }
+
+#bottom-header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    /*background-color: #a393b8;*/
+    background-color: #b0a2c2;  /* light Purple
+    background-color: #B4C2A2;  /* Green */
+
+    -webkit-border-bottom: 1px solid #efefef;
+    -moz-border-bottom: 1px solid #efefef;
+    -o-border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.hide-bottom-header { display: none; }
 
 /* 3.2.2 Info
 ---------------------------------------------------------------------------*/
@@ -565,6 +581,7 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     background-position: center bottom;
 }
 
+
 /* 3.3.2 Tiny
 ---------------------------------------------------------------------------*/
 #nav-wrapper.tiny {
@@ -574,11 +591,24 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     position: fixed;
     background-color: rgba(255, 255, 255, 0.95);
 }
-#nav-wrapper.tiny.tinyheader { 
-    padding: 15px 0; 
+#nav-wrapper.tiny.tinyheader {
+    padding: 15px 0;
     background-color: #b0a2c2;
 }
 
+/* 3.3.2 Footer Wrapper Tiny
+---------------------------------------------------------------------------*/
+#nav-wrapper.tiny.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+#nav-wrapper.tiny.tinyheader.footer {
+    padding: 15px 0;
+    background-color: #b0a2c2;
+}
 
 
 
@@ -2113,13 +2143,35 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
 ========================================================================== */
 /* 18.1 Wrapper
 ---------------------------------------------------------------------------*/
+/*#footer-section {*/
+    /*margin: 0;*/
+    /*width: 100%;*/
+    /*padding: 30px 0;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*background-color: #222222;*/
+/*}*/
+
 #footer-section {
-    margin: 0;
+    bottom: 0;
     width: 100%;
-    padding: 30px 0;
-    overflow: hidden;
+    z-index: 6999;
+    position: absolute;
+}
+
+#footer-banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     position: relative;
-    background-color: #222222;
+    /*background-color: #a393b8;*/
+    background-color: #b0a2c2;  /* light Purple
+    background-color: #B4C2A2;  /* Green */
+
+    -webkit-border-bottom: 1px solid #efefef;
+    -moz-border-bottom: 1px solid #efefef;
+    -o-border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
 }
 
 /* 18.2 Anchor

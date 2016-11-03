@@ -354,15 +354,21 @@ jQuery(window).scroll(function () {
 
     if (jQuery(document).scrollTop() >= 130) {
         jQuery('#nav-wrapper').addClass('tinyheader');
+        jQuery('#nav-wrapper.footer').addClass('tinyheader');
     } else {
         jQuery('#nav-wrapper').removeClass('tinyheader');
+        jQuery('#nav-wrapper.footer').remove('tinyheader');
     }
     if (jQuery(document).scrollTop() >= 35) {
         jQuery('#nav-wrapper').addClass('tiny');
         jQuery('#top-header').addClass('hide-top-header');
+        jQuery('#nav-wrapper.footer').addClass('tiny');
+        jQuery('#bottom-header').addClass('hide-bottom-header');
     } else {
         jQuery('#nav-wrapper').removeClass('tiny');
         jQuery('#top-header').removeClass('hide-top-header');
+        jQuery('#nav-wrapper.footer').removeClass('tiny');
+        jQuery('#bottom-header').removeClass('hide-bottom-header');
     }
 
 
