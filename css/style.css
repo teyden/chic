@@ -23,11 +23,17 @@
  *
  */
 
-.mobileHide { display: inline;}
+.mobileHide { display: inherit;}
 /* Smartphone Portrait and Landscape */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 480px){  .mobileHide { display: none;}}
+and (max-device-width : 980px){  .mobileHide { display: none;}}
+
+.mobileOnly { display: none;}
+/* Smartphone Portrait and Landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 980px){  .mobileOnly { display: inline-block;}}
 
 /*****************************************************************
 ******************************************************************/
@@ -2152,11 +2158,22 @@ a.instagram:hover { background: url("../images/mask/masksquare.png") no-repeat s
     /*background-color: #222222;*/
 /*}*/
 
+/*#footer-section {*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*z-index: 6999;*/
+    /*position: absolute;*/
+/*}*/
+
 #footer-section {
-    bottom: 0;
     width: 100%;
-    z-index: 6999;
-    position: absolute;
+    bottom:0;
+    position:fixed;
+    z-index:150;
+    _position:absolute;
+    _top:expression(eval(document.documentElement.scrollTop+
+      (document.documentElement.clientHeight-this.offsetHeight)));
+    height:35px;
 }
 
 #footer-banner {
